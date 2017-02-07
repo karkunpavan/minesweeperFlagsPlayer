@@ -2,9 +2,9 @@
 An AI/ Reinforcement Learning agent that learns and plays the game minesweeper Flags
 
 
-TO-DOs:
+#TO-DOs:
 
-# Minesweeper Flags
+## Minesweeper Flags
 ### Minesweeper Board
 * Uniformly distributed board
 * API's for both AI's/players access the situation
