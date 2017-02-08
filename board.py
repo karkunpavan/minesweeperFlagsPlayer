@@ -45,14 +45,14 @@ class board(object):
         for row in range(0,self.row):
             my_str = ''
             for col in range(0,self.col):
-                my_str += str(obj[row][col])+' '
+                my_str += format_spec(obj[row][col])+' '
             print(my_str)
 
     def pretty_print_chars(self):
-        self.pretty_print(self.board)
+        self.pretty_print(self.board, lambda x: '%s' %x)
 
     def pretty_print_grid(self):
-        self.pretty_print(self.revealed)
+        self.pretty_print(self.revealed, lambda x: '%2d' %x)
 
     def make_move (this, index , operation):
         return
